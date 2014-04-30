@@ -192,6 +192,12 @@ my $metrics_validator = [
             [['CHOICE',qw/1 0/],'invalid stack flag'],
         ],
     },
+    'graphonly' => {
+        default => 0,
+        rule => [
+            [['CHOICE',qw/1 0/],'invalid graphonly flag'],
+        ],
+    },
 ];
 
 sub _build_metrics_params {
